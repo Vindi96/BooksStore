@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BookApp.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -11,29 +12,27 @@ namespace BookApp.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
+       
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<Publisher> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            using (var _context = new BookDBcontext())
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                // Publisher publisher = new Publisher();
+                // publisher.PublisherName = "Sarasavi";
+
+                // _context.Publishers.Add(publisher);
+                // _context.SaveChanges();
+                Publisher publisher = _context.Publishers.FirstOrDefault();
+                // publisher.PublisherName = "Sarasavi Book Shop";
+                _context.Publishers.Remove(publisher);
+                _context.SaveChanges();
+
+                return _context.Publishers.ToList();
+
+            }
+           // return new List<Publisher>();
         }
     }
 }
