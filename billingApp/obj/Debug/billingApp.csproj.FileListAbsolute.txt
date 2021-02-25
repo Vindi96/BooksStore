@@ -1,0 +1,10 @@
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\bin\Debug\billingApp.exe.config
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\bin\Debug\billingApp.exe
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\bin\Debug\billingApp.pdb
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\obj\Debug\billingApp.csprojAssemblyReference.cache
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\obj\Debug\billingApp.Form1.resources
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\obj\Debug\billingApp.Properties.Resources.resources
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\obj\Debug\billingApp.csproj.GenerateResource.cache
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\obj\Debug\billingApp.csproj.CoreCompileInputs.cache
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\obj\Debug\billingApp.exe
+D:\Academic\cis 3-2\Company Works\Projects\billingApp\billingApp\billingApp\obj\Debug\billingApp.pdb
